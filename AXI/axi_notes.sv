@@ -19,3 +19,10 @@ response is passed as part of the Read Data channel.
   for the write response. Whereas During read, the address send from master to slave,  and the data will come from slave ro master also
     the respone should come from slave to master so there is no separate read respone required. Incase of read with the transfer(beats)
     response will come alogn with that.
+
+Q. Differences between transfers and transactions?
+    Ans:
+    Tansfer:A transfer is a single exchange of information, with one VALID and READY handshake. i.e completion of any single
+    information like address, or data or response or control information.
+    Transactions: A transaction is an entire burst of transfers, containing an address transfer, one or more data
+    transfers, and, for write sequences, a response transfer. i.e. a complete data transaction(includes multiple transfers)
