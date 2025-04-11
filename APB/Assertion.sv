@@ -61,6 +61,7 @@ module apb_assertion(input bit pwrite, bit[31:0]pwdata, bit[31:0]paddr, bit prea
     @(posedge pclk) disable iff(!presetn)
     !pwrite && padder[15:0]==16'b08 |-> $rose(pslverr);
   endproperty
+
   
   
 
