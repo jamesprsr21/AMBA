@@ -1,6 +1,16 @@
 AHB stands for Advanced High Perfomance Bus
-  Supprts multi-master Multi-slave 
+  It is a bus interface for high-performance synthesizable device
+    AMBA AHB implements the features required for high-performance, high clock frequency system including 
+      >Burst transfer
+      >Single clock edge operation
+      >Non-tristate implementation
+      >configurable data bus width
+      >Configurable address bus width
+  Supports multi-master Multi-slave 
   point to point communication
+  The most common AHB subordinates/slaves are internal memory devices, external memory interface and high bandwidth peripherals. Although low BW peripherals can be included as 
+    AHB subordinates.
+
   
 Q.why ahb is single clock edge operation?
 Ans: 
